@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <LangVersion>latest</LangVersion>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <IsRoslynComponent>true</IsRoslynComponent>
+	  <PreserveCompilationContext>true</PreserveCompilationContext>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	  <IncludeBuildOutput>false</IncludeBuildOutput>
+	  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+	  <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+	  <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+	  <RootNamespace>Telegram.NextBot.Analyzers</RootNamespace>
+  </PropertyGroup>
+	
+  <Target Name="ReloadSourceGenerator" BeforeTargets="BeforeBuild" DependsOnTargets="$(BeforeBuildDependsOn)">
+	  <!--Exec Command="dotnet build-server shutdown" /-->
+  </Target>
+	
+  <ItemGroup>
+	<AdditionalFiles Include="Diagnostics\AnalyzerReleases.Shipped.md" />
+	<AdditionalFiles Include="Diagnostics\AnalyzerReleases.Unshipped.md" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.12.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\Telegram.NextBot\Telegram.NextBot.csproj" />
+  </ItemGroup>
+	
+</Project>

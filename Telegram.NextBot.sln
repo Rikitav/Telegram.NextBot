@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.NextBot.Analyzers", "Telegram.NextBot.Analyzers\Telegram.NextBot.Analyzers.csproj", "{B3EC8B3C-6D4F-4345-AD75-BFE9B93453AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.NextBot.Tests.ConsoleApp", "Telegram.NextBot.Tests.ConsoleApp\Telegram.NextBot.Tests.ConsoleApp.csproj", "{FACA7B95-0AA3-45C1-90C1-47E051D4DC2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.NextBot", "Telegram.NextBot\Telegram.NextBot.csproj", "{248BB42D-6AB2-40B8-8F3C-8DFB26C83D97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3EC8B3C-6D4F-4345-AD75-BFE9B93453AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3EC8B3C-6D4F-4345-AD75-BFE9B93453AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3EC8B3C-6D4F-4345-AD75-BFE9B93453AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3EC8B3C-6D4F-4345-AD75-BFE9B93453AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACA7B95-0AA3-45C1-90C1-47E051D4DC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACA7B95-0AA3-45C1-90C1-47E051D4DC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACA7B95-0AA3-45C1-90C1-47E051D4DC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACA7B95-0AA3-45C1-90C1-47E051D4DC2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248BB42D-6AB2-40B8-8F3C-8DFB26C83D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248BB42D-6AB2-40B8-8F3C-8DFB26C83D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248BB42D-6AB2-40B8-8F3C-8DFB26C83D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248BB42D-6AB2-40B8-8F3C-8DFB26C83D97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC5F7F92-5235-4E89-939A-4A34665554A2}
+	EndGlobalSection
+EndGlobal
